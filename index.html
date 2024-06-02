@@ -63,29 +63,80 @@
         <hr>
 
         <!-- Message Us -->
-        <section id="Message Us">
+        <section id="Message-Us">
             <header>
                 <h1>Message Us</h1>
             </header>
 
-            <section class="message-container">
-                <!-- Form -->
-                <section>
-                    <form>
-                        <label>Name :</label>
-                        <input />
-                    </form>
+            <section class="message_us">
+                <section class="message-container">
+                    <!-- Form -->
+                    <article class="form">
+                        <table>
+                            <tr class="table-row">
+                                <td class="label">Nama</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="nama" type="text" class="input-text" placeholder="Nama"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">Tanggal Lahir</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="Tanggal Lahir" type="date" class="input-text"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">Jenis Kelamin</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="laki-laki" type="radio" value="laki-laki" name="Jenis Kelamin">
+                                <label for="laki-laki">Laki-laki</label>
+                                <input id="perempuan" type="radio" value="perempuan" name="Jenis Kelamin">
+                                <label for="perempuan">Perempuan</label></td>
+                            </tr>
+                        
+                            <tr class="table-row"> 
+                                <td class="label">Pesan</td>
+                                <td>:</td>
+                                <td class="input-table"><textarea placeholder="Pesan" class="input-area"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="submit" id="button-submit" name="submit">
+                    </article>
                 </section>
-
-                <!-- Result -->
-                <section class="result-container">
-                    <div class="form-result">
-
-                    </div>
+                <section class="message-container">
+                    <!-- Result -->
+                    <article class="form">
+                        <table>
+                            <tr class="table-row">
+                                <td class="label">Nama</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="nama" type="text" class="input-text" placeholder="Nama"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">Tanggal Lahir</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="Tanggal Lahir" type="date" class="input-text"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="label">Jenis Kelamin</td>
+                                <td>:</td>
+                                <td class="input-table"><input id="laki-laki" type="radio" value="laki-laki" name="Jenis Kelamin">
+                                <label for="laki-laki">laki-laki</label>
+                                <input id="perempuan" type="radio" value="perempuan" name="Jenis Kelamin">
+                                <label for="perempuan">perempuan</label></td>
+                            </tr>
+                        
+                            <tr class="table-row"> 
+                                <td class="label"><b>Pesan</b></td>
+                                <td>:</td>
+                                <td class="input-table"><textarea placeholder="Pesan" class="input-area"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="submit" id="button-submit" name="submit">
+                    </article>
                 </section>
-            </section>
         </section>
     </section>
+    
+    <hr>
 
     <footer>
         <p>Created by U-Grade Development</p>

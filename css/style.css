@@ -1,8 +1,8 @@
-/* Ini Css */
-
+/* navbar */
 nav {
     display: flex;
-    padding-right: 100px;
+    padding-right: 80px;
+    padding-left: 40px;
     justify-content: space-between;
     
 }
@@ -25,16 +25,20 @@ nav>section {
 .nav-item {
     border: 1px solid black;
     padding: 8px;
-    border-radius: 3px;
     text-decoration: none;
     color: black;
 }
 
+
+
+/* Home */
 .banner-container {
-    height: 258px;
+    height: 550px;
     border: 1px solid black;
 }
 
+
+/* Our Profile */
 .profile-list {
     display: flex;
     justify-content: space-around;
@@ -50,12 +54,72 @@ nav>section {
 }
 
 .img-profile {
-    width: 50px; 
-    height: 50px; 
+    width: 100px; 
+    height: 100px; 
     border: 1px solid black;
     border-radius:50%;
 }
-.form-result {
+
+
+/* Message Us */
+section#Message-Us {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.message_us {
+    display: flex;
+    margin-bottom: 50px;
+}
+.message_us > .message-container {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+}
+
+.message-container > form {
+    flex-direction: row;
+    display: flex;
+}
+
+
+/* Form */
+article.form table .table-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+article.form table .table-row td.label {
+    width: 150px;
+}
+article.form table .table-row td.input-table {
+    margin-left: 5px;
+}
+article.form table .table-row td.input-table .input-text {
+    width: 300px;
+    align-items:center;
+}
+
+article.form table .table-row td.input-table .input-area {
+    width: 302px;
     height: 100px;
+}
+article.form input#button-submit {
+    width: 100%;
+}
+
+
+/* Result */
+.table-container {
     border: 1px solid black;
+}
+
+
+/* Footer */
+footer > p {
+    text-align: center;
+    margin-top: 20px;
 }
