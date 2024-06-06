@@ -1,145 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>U-Grade Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav>
-        <div class="logo-icon"></div>
 
-        <section>
-            <a class="nav-item" href="#Home">Home</a>
-            <a class="nav-item" href="#Our Profile">Our profile</a>
-            <a class="nav-item" href="#">Achievement</a>
-            <a class="nav-item" href="#Message Us">Message Us</a>
-        </section>
+<body>
+    <!-- navbar -->
+    <nav>
+      <div>
+          <h2 class="font-navbar">U-Grade</h2>
+      </div>
+
+      <ul class="">
+          <li><a class="nav-item" href="#Home">Home</a></li>
+          <li><a class="nav-item" href="#Our Profile">Our Profile</a></li>
+          <li><a class="nav-item" href="#">Portofolio</a></li>
+          <li><a class="nav-item" href="#Message Us">Message Us</a></li>
+      </ul>
     </nav>
 
-    <hr>
-
+    <!-- Home -->
     <section>
-        <!-- Home -->
-        <section id="Home">
-            <header>
-                <h1>Hi Member, Welcome to website</h1>
-            </header>
+      <header class="container" id="Home">
+        <div class="content">
+          <span class="blur"></span>
+          <span class="blur"></span>
+          <h4 style="display: none;">WEBSITE PORTOFOLIO #1</h4>
+          <H1>Hi <span id="name-span">Member</span>, <br>Welcome to U-Grade</H1>
+          <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
+              temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
+              dolorem.
+          </p>
+          <button class="login-btn" onclick="replaceName()">Change Name</button>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="/asset/banner-1.png" style="width:100%">
+          </div>
 
-            <article>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem exercitationem ea placeat earum voluptas velit deleniti? Fugiat voluptate rerum, quaerat distinctio voluptatibus impedit similique harum? Pariatur, perferendis mollitia! Accusamus, officiis.</p>
-
-                <div class="banner-container">
-
-                </div>
-            </article>
-        </section>
+          <div class="mySlides fade">
+            <img src="/asset/banner-2.png" style="width:100%">
+          </div>
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span>
+          </div>
+        </div>
         
-        <hr>
+      </header>
 
-        <!-- Our Profile -->
-        <section id="Our Profile">
-            <header>
-                <h1>Our Profile</h1>
-            </header>
+      <!-- Our Profile -->
+      <section class="container" id="Our Profile">
+        <h2 class="header">OUR PROFILE</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-account-box-line"></i></span>
+                <h4>About Me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet, sit totam similique veniam ex magni facilis qui sed provident cupiditate.</p>
+                <a href="#">More <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-bar-chart-box-line"></i></span>
+                <h4>Achivement</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet, sit totam similique veniam ex magni facilis qui sed provident cupiditate.</p>
+                <a href="#">More <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-briefcase-2-line"></i></span>
+                <h4>Project</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum distinctio veniam, dignissimos, minus numquam commodi iste perferendis.</p>
+                <a href="#">More <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-global-line"></i></span>
+                <h4>Community</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum distinctio veniam, dignissimos, minus numquam commodi iste perferendis.</p>
+                <a href="#">More <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+      
+      <!-- Message Us -->
+      <section class="container" id="Message Us">
+          <h2 class="header">MESSAGE US</h2>
+          <p class="sub-header">
+              You can message us with form in bottom.
+          </p>
+          <div class="pricing">
 
-            <article class="profile-list">
-                <div>
-                    <div class="img-profile"></div>
-                    <h5>About Me</h5>
-                </div>
-                <div>
-                    <div class="img-profile"></div>
-                    <h5>Contact</h5>
-                </div>
-                <div>
-                    <div class="img-profile"></div>
-                    <h5>Email</h5>
-                </div>
-            </article>
-        </section>
+              <!-- Form -->
+              <article class="form">
+                  <form name="message-form" onsubmit="return validateForm()">
+                      <table>
+                          <tr class="table-row">
+                              <td class="label">Your Name</td>
+                              <td>:</td>
+                              <td class="input-table">
+                              <input id="full-name" type="text" class="input-text" placeholder="Your Name" required></td>
+                          </tr>
+                          <tr class="table-row">
+                            <td class="label">Your Email</td>
+                            <td>:</td>
+                            <td class="input-table">
+                            <input id="email" type="text" class="input-text" placeholder="Your Email" required></td>
+                        </tr>
+                          <tr class="table-row">
+                              <td class="label">Birth Date</td>
+                              <td>:</td>
+                              <td class="input-table">
+                              <input id="birth-date" type="date" class="input-text" required></td>
+                          </tr>
+                          <tr class="table-row">
+                              <td class="label">Gender</td>
+                              <td>:</td>
+                              <td class="input-table"><input id="Male" type="radio" value="Male" name="gender">
+                              <label for="male">Male</label>
+                              <input id="Female" type="radio" value="Female" name="gender" required>
+                              <label for="famale">Female</label></td>
+                          </tr>
+                      
+                          <tr class="table-row"> 
+                              <td class="label">Message</td>
+                              <td>:</td>
+                              <td class="input-table"><textarea placeholder="Your Message" class="input-area" name="messages" required></textarea></td>
+                          </tr>
+                      </table>
+                      <input type="submit" id="button-submit" name="Submit">
+                  </form>
+              </article>
 
-        <hr>
-
-        <!-- Message Us -->
-        <section id="Message-Us">
-            <header>
-                <h1>Message Us</h1>
-            </header>
-
-            <section class="message_us">
-                <section class="message-container">
-                    <!-- Form -->
-                    <article class="form">
-                        <table>
-                            <tr class="table-row">
-                                <td class="label">Nama</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="nama" type="text" class="input-text" placeholder="Nama"></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Tanggal Lahir</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="Tanggal Lahir" type="date" class="input-text"></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Jenis Kelamin</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="laki-laki" type="radio" value="laki-laki" name="Jenis Kelamin">
-                                <label for="laki-laki">Laki-laki</label>
-                                <input id="perempuan" type="radio" value="perempuan" name="Jenis Kelamin">
-                                <label for="perempuan">Perempuan</label></td>
-                            </tr>
-                        
-                            <tr class="table-row"> 
-                                <td class="label">Pesan</td>
-                                <td>:</td>
-                                <td class="input-table"><textarea placeholder="Pesan" class="input-area"></textarea></td>
-                            </tr>
-                        </table>
-                        <input type="submit" id="button-submit" name="submit">
-                    </article>
-                </section>
-                <section class="message-container">
-                    <!-- Result -->
-                    <article class="form">
-                        <table>
-                            <tr class="table-row">
-                                <td class="label">Nama</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="nama" type="text" class="input-text" placeholder="Nama"></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Tanggal Lahir</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="Tanggal Lahir" type="date" class="input-text"></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="label">Jenis Kelamin</td>
-                                <td>:</td>
-                                <td class="input-table"><input id="laki-laki" type="radio" value="laki-laki" name="Jenis Kelamin">
-                                <label for="laki-laki">laki-laki</label>
-                                <input id="perempuan" type="radio" value="perempuan" name="Jenis Kelamin">
-                                <label for="perempuan">perempuan</label></td>
-                            </tr>
-                        
-                            <tr class="table-row"> 
-                                <td class="label"><b>Pesan</b></td>
-                                <td>:</td>
-                                <td class="input-table"><textarea placeholder="Pesan" class="input-area"></textarea></td>
-                            </tr>
-                        </table>
-                        <input type="submit" id="button-submit" name="submit">
-                    </article>
-                </section>
-        </section>
+              <!-- Result -->
+              <div class="form">
+                  <div class="result-container">
+                    <p>Current Time : <span id="sender-current-time"></span></p>
+                    <br>
+                    <br>
+                    <p>Your Name : <span id="sender-full-name"></span></p>
+                    <p>Your Email : <span id="sender-email"></span></p>
+                    <p>Birth Date : <span id="sender-birth-date"></span></p>
+                    <p>Gender : <span id="sender-gender"></span></p>
+                    <p>Message : <span id="sender-messages"></span></p>
+                  </div>
+              </div>
+          </div>
+      </section>
     </section>
-    
-    <hr>
 
+    <!-- Footer -->
     <footer>
-        <p>Created by U-Grade Development</p>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <p>© 2024 U-Grade Development</p>
     </footer>
+  </section>
+
+  <script src="/js/script.js"></script>
+
 </body>
-</html>
+</html> 
